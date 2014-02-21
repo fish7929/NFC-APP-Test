@@ -16,7 +16,8 @@
         <div data-role="page" id="userPage"  style="background-image: url(./img/bg.png);">
 			
 			<div data-role="header"  data-position="fixed" data-theme='e'>
-				<h1>门禁</h1>
+				<a href="admin.html" rel="external" data-icon="back"  data-inline="true">返回</a>
+                <h1>其他设置</h1>
 			</div><!--/header-->
 			<div data-role="content" data-inset="true" >
 				<form >
@@ -34,17 +35,7 @@
 					<button name="reset" id="reset" data-inline="true">重设</button>
 				</form>
 			</div>
-			<div data-role="footer" data-mini="true" data-position="fixed" data-id="unifiedFooter" data-theme='e'>
-				<div data-role="navbar" > 
-					<ul>
-						<li><a href="user.html" id="user"  data-icon="star" rel="external">用户</a></li> 
-						<li><a href="admin.html" id="admin" data-icon="grid" rel="external">管理员</a></li>
-						<li><a href="#" id="setup" class="ui-btn-active" data-icon="gear" >设置</a></li> 
-						<li><a href="#" id="exit" data-icon="delete" >退出</a></li> 
-					</ul> 
-				</div>
-			</div><!--/footer-->
-        </div>
+		</div>
 		<script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" charset="utf-8" src="phonegap-nfc.js"></script>
 		<script type="text/javascript" charset="utf-8" src="phonegap-toast.js"></script>
