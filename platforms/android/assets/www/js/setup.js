@@ -8,7 +8,7 @@
 	}
 	if (oldPass !== pass){
 		errmsg = "输入的原始密码不正确。";
-		alert(errmsg);
+		notifyUser(errmsg);
 	}else {
 		ret = true;
 	}
@@ -22,10 +22,10 @@ function checkNewPass1(id){
 	var ret = false;
 	if (len == 0){
 		errmsg = "新密码不能为空。";
-		alert(errmsg);
+		notifyUser(errmsg);
 	} else if (len < 6){
 		errmsg = "新密码不能小于六个字符！";
-		alert(errmsg);
+		notifyUser(errmsg);
 	}else {
 		ret = true;
 	}
@@ -39,13 +39,13 @@ function checkNewPass2(id, pass){
 	var ret = false;
 	if (len == 0){
 		errmsg = "新密码不能为空。";
-		alert(errmsg);
+		notifyUser(errmsg);
 	} else if (len < 6){
 		errmsg = "新密码不能小于六个字符！";
-		alert(errmsg);
+		notifyUser(errmsg);
 	} else if (pass2 != pass){
 		errmsg = "两次输入的新密码不相符请重新输入！";
-		alert(errmsg);
+		notifyUser(errmsg);
 	}else {
 		ret = true;
 	}
@@ -73,7 +73,7 @@ $(document).ready(function(){
 			return false;
 		}
 		setData('login', newPass);
-		alert("设置密码成功！");
+		notifyUser("设置密码成功！");
 		clear();
 		//alert(content);
 		return false;
